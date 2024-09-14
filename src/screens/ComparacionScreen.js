@@ -79,7 +79,7 @@ const ComparacionScreen = ({ route, navigation }) => {
         </Card>
         <Button
           title="Ver Productos Financieros"
-          onPress={() => navigation.navigate('Tab2', { ingresos, egresos })}
+          onPress={() => navigation.navigate('ProductosFinancieros', { ingresos, egresos })}
         />
       </View>
     </ScrollView>
