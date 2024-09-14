@@ -1,9 +1,9 @@
 import React from "react";
-import { View, StyleSheet, Dimensions, ScrollView } from "react-native";
+import { View, StyleSheet, Dimensions, ScrollView, Button } from "react-native";
 import { PieChart } from "react-native-chart-kit";
 import { Title, Subheading, Card, Paragraph } from "react-native-paper";
 
-const ComparacionScreen = ({ route }) => {
+const ComparacionScreen = ({ route, navigation }) => {
   const { ingresos, egresos } = route.params;
 
   const ingresosMontoTotal = ingresos.reduce(
@@ -77,6 +77,10 @@ const ComparacionScreen = ({ route }) => {
             </Paragraph>
           </Card.Content>
         </Card>
+        <Button
+          title="Ver Productos Financieros"
+          onPress={() => navigation.navigate('Tab2', { ingresos, egresos })}
+        />
       </View>
     </ScrollView>
   );
