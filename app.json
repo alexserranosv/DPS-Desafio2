@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "Desafio2",
-    "slug": "Desafio2",
+    "name": "MoneyMatch",
+    "slug": "MoneyMatch",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/wglFJecxRPXh_1242_2688.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -18,10 +18,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.yensyc.MoneyMatch"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "30fdd762-4ed8-4c05-8bc0-ab14e9cf1096"
+      }
+    },
+    "owner": "yensyc"
   }
 }
